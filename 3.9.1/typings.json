@@ -2,7 +2,7 @@
   "name": "gulp",
   "homepage": "https://gulpjs.com/",
   "version": "3.9.1",
-  "main": "gulp.d.ts",
+  "main": "index.d.ts",
   "globalDependencies": {
     "node": "registry:dt/node#6.0.0+20160602155235"
   },
