@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Typescript typings for gulpjs",
   "scripts": {
-    "build": "npm run prepare && npm run bundle && npm run build-ts && npm run bundle",
+    "build": "npm run prepare && npm run bundle && npm run build-ts",
     "prepare": "echo installing typings... && cd 3.9.1 && typings install && cd ../4.0.0-alpha.2 && typings install",
     "build-ts": "echo building... && tsc -p 3.9.1 & tsc -p 4.0.0-alpha.2",
     "bundle": "echo bundling... && cd 3.9.1 && typings bundle -o out/index.d.ts && cd ../4.0.0-alpha.2 && typings bundle -o out/index.d.ts",
