@@ -9,7 +9,10 @@
     "build-ts": "echo building... && tsc -p 3.9.1 & tsc -p 4.0.0-alpha.2",
     "bundle": "echo bundling... && cd 3.9.1 && typings bundle -o out/index.d.ts && cd ../4.0.0-alpha.2 && typings bundle -o out/index.d.ts",
     "test": "echo runing tests... && tsc -p 3.9.1/test & tsc -p 4.0.0-alpha.2/test",
-    "build+test": "npm run build && npm run test"
+    "build+test": "npm run build && npm run test",
+    "cleanup-typings": "echo Removing typings folders... && for /d /r . %d in (typings) do @if exist %d rd /s/q %d",
+    "cleanup-out": "echo Removing out folders... && for /d /r . %d in (out) do @if exist %d rd /s/q %d",
+    "cleanup": "npm run cleanup-typings && npm run cleanup-out"
   },
   "author": "Giedrius Grabauskas <https://github.com/GiedriusGrabauskas>",
   "license": "MIT",
