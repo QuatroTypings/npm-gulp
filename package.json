@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/QuatroTypings/npm-gulp",
   "devDependencies": {
-    "typescript": "^1.8.10"
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
   }
 }
