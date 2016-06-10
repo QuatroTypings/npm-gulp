@@ -1,3 +1,7 @@
 [submodule "3.8.0"]
 	path = 3.8.0
 	url = https://github.com/typed-typings/npm-gulp.git
+[submodule "source"]
+	path = source
+	url = https://github.com/gulpjs/gulp.git
+	branch = master
