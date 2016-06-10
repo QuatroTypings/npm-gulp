@@ -143,6 +143,7 @@ declare namespace GulpClient {
          * @fn Once async completion is signalled, if another run is queued, it will be executed.
          */
         watch(globs: Globs): fs.FSWatcher;
+        watch(globs: Globs, fn: TaskFunction): fs.FSWatcher;
         watch(globs: Globs, opts: WatchOptions): fs.FSWatcher;
         watch(globs: Globs, opts: WatchOptions, fn: TaskFunction): fs.FSWatcher;
 
