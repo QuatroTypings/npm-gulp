@@ -1,8 +1,6 @@
 
 import * as gulp from 'gulp';
-import * as GulpClient from 'gulp/contracts';
 import * as undertaker from 'undertaker';
-
 
 var minify: Function;
 var jade: Function;
@@ -59,17 +57,17 @@ someTask.description = 'Does something';
 gulp.task(someTask);
 
 
-let foo: GulpClient.TaskFunction = () => { };
+let foo: gulp.TaskFunction = () => { };
 foo.name === 'foo' // true
 
-var bar: GulpClient.TaskFunction = function () { };
+var bar: gulp.TaskFunction = function () { };
 bar.name === '' // true
 
 bar.name = 'bar'
 bar.name === '' // true
 
 
-let test: GulpClient.TaskFunction = (done) => {
+let test: gulp.TaskFunction = (done) => {
     done();
 };
 

@@ -4,7 +4,6 @@
     "moduleResolution": "node"
   },
   "files": [
-    "./contracts.d.ts",
     "./index.d.ts",
     "./typings/index.d.ts"
   ]
